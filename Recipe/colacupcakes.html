@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Recipe | Coca-Cola Cupcakes</title>
+	<link rel="stylesheet" type="text/css" href="colacupcakes.css">
+	<link rel="stylesheet" href="animations.css">
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,700' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+<script>
+	$(window).scroll(function() {
+		$('.floating').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("floating");
+			}
+		});
+	});
+</script>
+
+<body>
+	<section>
+		<header id="header">
+			<h1 class="floating">Coca-Cola Cupcakes</h1>
+			<p>Your step-by-step recipe to make awesome Coca-Cola cupcakes!</p>
+		</header> <!-- end header-->
+
+		<div id="content">
+			<section id="recipe">
+				<div id="intro">
+					<h2>The Recipe | C`oca-Cola Cupcakes</h2>
+					<p>These delicious cola flavoured cupcakes are awesome. <br> Not too overpowering and are a great alternative to chocolate. <br> This recipe makes roughly <em>12-16 cupcakes</em>. Enjoy!</p>
+				</div> 
+
+				<div id="ingredients">
+					<h3>INGREDIENTS:</h3>
+					<div id="sponge">
+						<h4>The Sponge</h4>
+						<ul>
+							<li>80g (3oz) unsalted butter, softened</li>
+							<li>280g (100 oz) caster sugar</li>
+							<li>240g (8 1/2 oz) plain flour</li>
+							<li>1 tbsp baking soda</li>
+							<li>1/4 tsp salt</li>
+							<li>1 tbsp cola syrup (soda stream is best)</li>
+							<li>240ml (8 1/2 fl oz) milk</li>
+							<li>2 large eggs</li>
+						</ul>
+					</div>
+
+					<div id="frosting">
+						<h4>The Frosting</h4>
+						<ul>
+							<li>500g (1lb 2oz) icing sugar</li>
+							<li>160g (5 1/2 oz) unsalted butter, softened</li>
+							<li>2 tbsp cola syrup</li>
+							<li>50ml (1 3/4 fl oz) whole milk</li>
+							<li>24-36 cola bottle sweets to decorate (optional)</li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="instructions">
+					<h3>INSTRUCTIONS</h3>
+					<img src="images/copper-bowl.jpg" id="imageone" alt="person mixing ingredients in a bowl">
+					<img src="images/cupcakes-wirerack.jpg" id="imagetwo" alt="cupcakes cooling on a wirerack">
+					<ol>
+						<li>Pre-heat the oven to 190oC (375oF), Gas mark 5, and fill a muffin tin with muffin cases.</li>
+						<li>Using a hand-held electric whisk or a freestanding electric mixer with the paddle attachment, beat together the butter, sugar, flour, baking powder and salt on a low speed until all the ingredients are well incorporated and have the texture of fine breadcrumbs.</li>
+						<li>Put the cola syrup and milk in a jug, break in the eggs and whisk by hand to combine. pour three-quarters of the milk mixture into the dry ingredients and mix together on a low speed. Adjust the speed to medium and continue to mix until smooth and thick. Scrape down the sides of the bowl, add the remaining milk mixture and keep beating until everything is mixed in and the batter is smooth.</li>
+						<li>Divide the batter between the paper cases, filling them by about two-thirds. Any remaining batter can be used to fill up to four more cases in the second tin. Place in the oven and bake for 18-20 minutes or untill risen and springy to touch. Leave to cool slightly before removing from the tin and placing on a wire rack to cool completely before frosting.</li>
+						<li>Using the electric whisk or freestanding mixer with the paddle attachment, beat the icing sugar with the butter on a low speed until no large lumps of butter are left and the mixture is still powdery. Stir together the cola syrup with the milk in a jug, then por rhis into the butter and icing sugar  mixture while beating slowly. Once added, increase the speed to high and whisk until soft and fluffy.</li>
+						<li>Spread a generous spoonful of frosting on to each cooled cupcake, then gently smooth over a palette knife, making a swirl at the top and adding a couple of cola bottle sweets, if you wish.</li>
+					</ol>
+				</div>
+
+			</section> <!-- end recipe -->
+		</div> <!-- end content -->
+	</section> <!-- end recipe/main -->
+
+	<section id="footer">
+		<div id="socialmedia">
+			<h2>Share on Social Media</h2>
+				<ul>
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>Google+</li>
+				</ul>
+		</div> <!-- end of social media -->
+	</section> <!-- end footer -->
+</body>
+</html>

@@ -1,0 +1,187 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: inherit;
+}
+
+* { margin:0; padding:0; }
+
+header {
+	background-image: url(images/cola-cupcake.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+  	background-size: 100%;
+
+}
+
+body {
+	font-family: lato, sans-serif;
+	font-size: 1em;
+	color: #1d1d1d;
+	height:100%;
+}
+
+h1 {
+	font-family: Playfair Display; sans-serif;
+	font-size: 6em;
+	font-weight: 900;
+	font-style: italic;
+	text-align: center;
+	padding-top: 300px;
+	text-shadow: 2px 2px 10px #ffffff;
+	color: #1d1d1d;
+}
+
+h2{
+	font-weight: 700;
+	text-align: center;
+}
+
+h3 {
+	color: #247875;
+	padding: 10px;
+}
+
+h4 {
+	color: #c71c2e;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+
+/* {
+	border: 1px solid red !important;
+}*/
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+#header p {
+	text-align: center;
+	font-size: 2em;
+	color: #ffffff;
+	font-weight: 900;
+    text-shadow: 4px 4px 10px #1d1d1d;
+}
+
+#content {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+
+#intro h2 {
+	color: #c71c2e;
+	font-style: bold;
+	padding-top: 20px;
+}
+
+#intro p {
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 10px;
+}
+
+#ingredients {
+	text-align: center;
+	width: 100%;
+	padding-top: 30px;
+	height: 350px;
+}
+
+#ingredients li {
+	list-style-type: none;
+}
+
+#sponge {
+	width: 30%;
+	float: left;
+	padding-left: 20%;
+	font-size: 1.5em;
+}
+
+#frosting {
+	width: 30%;
+	display: inline-block;
+	padding-right: 18%;
+	font-size: 1.5em;
+}
+
+#instructions {
+	height: auto;
+	float: left;
+	clear: both;
+	padding-bottom: 20px;
+	background: url(images/cakes.jpg);
+	background-repeat: no-repeat;
+  	background-size: 100%;
+}
+
+img {
+	clear: both;
+	box-shadow: 5px 5px 20px #26292b;
+	border-color: #1d1d1d;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 50%;
+	width: 20%;
+	display: inline;
+	position: relative;
+	float: right;
+}
+
+#imageone {
+	margin-top: 50px;
+	margin-right: 7%;
+	
+}
+
+#imagetwo {
+	margin-right: 2%;
+	margin-top: 90px;
+}
+
+#instructions h3 {
+	text-align: center;
+	padding-top: 30px;
+}
+
+#instructions li {
+	width: 65%;
+	font-size: 1.5em;
+	padding: 10px;
+	margin-left: 18%;
+}
+
+#footer {
+	background: #247875;
+	color: #ffffff;
+	padding-bottom: 20px;
+	width:100%;
+	height:100px;
+	position: relative;
+}
+
+#socialmedia h2 {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+	text-shadow: 2px 2px 10px #1d1d1d;
+}
+
+#socialmedia ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+#socialmedia li {
+	display: inline;
+	text-align: center;
+	margin: 0 20px 0 0;
+}
